@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'JBack';
+
+  login: string = "Login";
+  role: string = "Role";
+
+  loginChanged(value: string) {
+    this.login = value;
+  }
+
+  roleChanged(value: string) {
+    this.role = value;
+  }
 }

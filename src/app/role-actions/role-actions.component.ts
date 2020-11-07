@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-role-actions',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoleActionsComponent implements OnInit {
 
+  @Output() roleChangedEvent = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
+    this.roleChangedEvent.emit("No Role");
   }
 
 }

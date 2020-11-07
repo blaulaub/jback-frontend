@@ -3,16 +3,16 @@
   <div class="jback-header">
 
     <div class="jback-role">
-      Perspective
+      {{role}}
       <div class="jback-role-menu">
-        <app-role-actions></app-role-actions>
+        <app-role-actions (roleChangedEvent)="roleChanged($event)"></app-role-actions>
       </div>
     </div>
 
     <div class="jback-login">
-      Login
+      {{login}}
       <div class="jback-login-menu">
-        <app-login-actions></app-login-actions>
+        <app-login-actions (loginChangedEvent)="loginChanged($event)"></app-login-actions>
       </div>
     </div>
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-login-actions',
@@ -7,9 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginActionsComponent implements OnInit {
 
+  @Output() loginChangedEvent = new EventEmitter<string>();
+
   constructor() { }
 
   ngOnInit(): void {
+    this.loginChangedEvent.emit("No Login");
   }
 
 }
