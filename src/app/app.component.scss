@@ -26,6 +26,23 @@ div.jback-page {
             flex: 1;  // it will take up all remaining space until next element
 
             margin: 8px;
+
+            div.jback-role-menu {
+                display: none;
+                position: absolute;
+                left: 8px;
+                padding: 8px;
+                z-index: 1;
+
+                border: 1px solid white;
+
+                color: white;
+                background-color: red;
+            }
+        }
+
+        div.jback-role:hover div.jback-role-menu {
+            display: block;
         }
 
         div.jback-login {
@@ -33,6 +50,23 @@ div.jback-page {
             order: 2;
 
             margin: 8px;
+
+            div.jback-login-menu {
+                display: none;
+                position: absolute;
+                right: 8px;
+                padding: 8px;
+                z-index: 1;
+
+                border: 1px solid white;
+
+                color: white;
+                background-color: red;
+            }
+        }
+
+        div.jback-login:hover div.jback-login-menu {
+            display: block;
         }
     }
 
