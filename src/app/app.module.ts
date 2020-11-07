@@ -22,6 +22,8 @@ import { ShowApplicationsComponent } from './memberships/show-applications/show-
 import { ShowApplicationComponent } from './memberships/show-application/show-application.component';
 import { ApplicationActionsComponent } from './memberships/show-application/application-actions/application-actions.component';
 import { ApproveApplicationComponent } from './memberships/approve-application/approve-application.component';
+import { RoleActionsComponent } from './role-actions/role-actions.component';
+import { LoginActionsComponent } from './login-actions/login-actions.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { ApproveApplicationComponent } from './memberships/approve-application/a
     ShowApplicationsComponent,
     ShowApplicationComponent,
     ApplicationActionsComponent,
-    ApproveApplicationComponent
+    ApproveApplicationComponent,
+    RoleActionsComponent,
+    LoginActionsComponent
   ],
   imports: [
     BrowserModule,
