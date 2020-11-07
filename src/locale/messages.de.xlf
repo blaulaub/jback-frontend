@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ee7974d0be73410cd2dd308351a2f726a15b7b08" datatype="html">
+        <source>Login</source>
+        <target>Anmelden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="description">Login</note>
+        <note priority="1" from="meaning">heading</note>
+      </trans-unit>
+      <trans-unit id="5a2c8c4dcff63d6cb4f8b0536f26857093294b99" datatype="html">
+        <source>Username:</source>
+        <target>Nutzername:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+        <note priority="1" from="description">Username</note>
+        <note priority="1" from="meaning">label</note>
+      </trans-unit>
+      <trans-unit id="716ec9174c95c927d66d8d055420acd543f0a2ec" datatype="html">
+        <source>Password:</source>
+        <target>Passwort:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+        <note priority="1" from="description">Password</note>
+        <note priority="1" from="meaning">label</note>
+      </trans-unit>
+      <trans-unit id="375e7b9485bc7bd64b5c631f24c0dffed2495d2f" datatype="html">
+        <source>Submit</source>
+        <target>Anmelden</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/login/login.component.html</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <note priority="1" from="description">Submit</note>
+        <note priority="1" from="meaning">button</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
