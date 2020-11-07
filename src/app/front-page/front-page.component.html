@@ -1,15 +1,3 @@
-<h1>Welcome!</h1>
-
-This is the front page of JBack.
-
-<div *ngIf="userIsGuest()">
-    As visitor to this page you can do the following:
-
-    <ul>
-        <li><a routerLink="/browseClubs">Browse Clubs</a></li>
-    </ul>
-</div>
-
 <div *ngIf="userIsEnrolling()">
     We have received a valid confirmation code from you, but you are not fully enrolled yet. You can <li><a routerLink="/createMe">complete enrollement here</a>.
 </div>
@@ -19,8 +7,11 @@ This is the front page of JBack.
 
     <ul>
         <li>Show and edit <a routerLink="/person/{{userId}}">data about yourself</a></li>
-        <li><a routerLink="/browseClubs">Browse Clubs</a></li>
         <li><a routerLink="/createClub">Create club</a> to create a club.</li>
         <li><a [routerLink]="" (click)="logout()">Logout</a></li>
     </ul>
+</div>
+
+<div class="front-page-common-actions">
+    <a routerLink="/browseClubs">Browse Clubs</a>
 </div>
