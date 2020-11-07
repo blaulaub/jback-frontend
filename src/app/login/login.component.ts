@@ -4,9 +4,7 @@ import { Router } from '@angular/router';
 import {
   FormGroup,
   Validators,
-  FormBuilder,
-  AbstractControl,
-  ValidatorFn
+  FormBuilder
 } from '@angular/forms';
 
 import { SessionService } from '../session/session.service';
