@@ -1,4 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Perspective } from '../session/perspective';
 
 import { SessionService } from '../session/session.service';
 
@@ -20,7 +21,19 @@ export class LoginActionsComponent implements OnInit {
     this.loginChangedEvent.emit("No Login");
 
     this.sessionService.getSessionInfo()
-      .subscribe(result => console.log(result));
+      .subscribe(result => {
+        console.log(result);
+
+        if (Perspective[result.perspective] == Perspective.GUEST) {
+          this.loginChangedEvent.emit("Login…");
+        } else if(Perspective[result.perspective] == Perspective.MEMBER) {
+          let name = result.firstName + " " + result.lastName;
+          this.loginChangedEvent.emit(name.trim());
+        } else {
+          this.loginChangedEvent.emit("No Login");
+        }
+
+      });
 
   }
 
