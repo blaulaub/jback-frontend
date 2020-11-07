@@ -6,7 +6,8 @@ div.front-page-common-actions {
     a {
 
         display: block;
-        width: 200px;
+        height: 80px;
+        width: 240px;
 
         color: white;
         background-color: red;
@@ -15,5 +16,12 @@ div.front-page-common-actions {
         padding: 20px;
 
         text-decoration: inherit;
+        font-weight: bold;
+    }
+
+    a.dojo-background {
+        background-image: url('/assets/pixabay/autumnal-leaves-temple-tatami-mats-2141946-640.jpg');
+        background-size: cover;
+        background-position: bottom;
     }
 }
