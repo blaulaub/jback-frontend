@@ -1,13 +1,13 @@
-<h1 i18n="heading|Login">Login</h1>
+<div class="login-form" [formGroup]="loginForm">
 
-<div [formGroup]="loginForm">
+    <h1 i18n="heading|Login">Login</h1>
 
-    <div>
+    <div class="login-field">
         <label i18n="label|Username">Username:</label>
         <input formControlName="username" placeholder="username" required/>
     </div>
 
-    <div>
+    <div class="login-field">
         <label i18n="label|Password">Password:</label>
         <input formControlName="password" placeholder="password" type="password" required/>
     </div>
