@@ -23,7 +23,7 @@ import { ShowApplicationComponent } from './memberships/show-application/show-ap
 import { ApplicationActionsComponent } from './memberships/show-application/application-actions/application-actions.component';
 import { ApproveApplicationComponent } from './memberships/approve-application/approve-application.component';
 import { RoleActionsComponent } from './role-actions/role-actions.component';
-import { LoginActionsComponent } from './account-actions/login-actions.component';
+import { LoginActionsComponent } from './account-actions/account-actions.component';
 
 @NgModule({
   declarations: [

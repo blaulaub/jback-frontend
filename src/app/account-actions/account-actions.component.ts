@@ -5,8 +5,8 @@ import { SessionService } from '../session/session.service';
 
 @Component({
   selector: 'app-login-actions',
-  templateUrl: './login-actions.component.html',
-  styleUrls: ['./login-actions.component.scss']
+  templateUrl: './account-actions.component.html',
+  styleUrls: ['./account-actions.component.scss']
 })
 export class LoginActionsComponent implements OnInit {
 
