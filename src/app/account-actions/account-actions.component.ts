@@ -8,7 +8,7 @@ import { SessionService } from '../session/session.service';
   templateUrl: './account-actions.component.html',
   styleUrls: ['./account-actions.component.scss']
 })
-export class LoginActionsComponent implements OnInit {
+export class AccountActionsComponent implements OnInit {
 
   @Output() loginChangedEvent = new EventEmitter<string>();
 
